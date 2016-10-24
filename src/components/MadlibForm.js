@@ -26,12 +26,18 @@ var MadlibForm = React.createClass({
             type={this.state.type}
             options={this.state.options}
           />
-          <button
-            className="submit-button"
-            type="submit"
-          >
-            Make your mad lib!
-          </button>
+          {
+            Object.keys(this.state.value).filter(key => this.state.value[key]).length === Object.keys(this.state.inputs).length
+            ? (
+                <button
+                  className="submit-button"
+                  type="submit"
+                >
+                  Make your mad lib!
+                </button>
+              )
+            : null
+          }
         </form>
       </div>
     );
@@ -75,9 +81,18 @@ var MadlibForm = React.createClass({
         }
       },
       value: {},
-      submitted: false
+      submitted: false,
+      inputs: inputs,
     };
   },
+
+  componentDidMount: function() {
+    $('.madlib-form input').focus(e => {
+      $('.has-focus').removeClass('has-focus');
+      $(e.target).parent().addClass('has-focus');
+    })
+  },
+
   onSubmit: function(event) {
     event.preventDefault();
     if (this.formsAreValid()) {
