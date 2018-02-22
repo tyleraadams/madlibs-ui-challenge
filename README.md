@@ -7,11 +7,7 @@ It won't be highly educational, but with your help, it'll at least have a good U
 
 Here's a live hosted demo of this functionality: https://flocabulary.github.io/madlibs-ui-challenge/
 
-It's functional, but it clearly needs some styling and finessing. In your work, feel free
-to use our style guide https://www.flocabulary.com/tools/ui-style-guide/ but you are not
-bound to it. You can alter or remove any static text. Usage of modern CSS features like `transition`, `animation`
-and `flex-box` is encouraged. This exercise may require you to use some `git`, but you are not being
-judged on your use of it. 
+It's functional, but it clearly needs some styling and finessing. A Flocabulary designer has provided a set of mocks for how the feature should look and feel. Those mocks can be seen here: https://drive.google.com/drive/folders/1Sq946n18SD2QJTdwRXPp8Tfq_Uvrr2Zh?usp=sharing . Your task is to make the feature match the mocks. Where elements change size or color, care should be taken to smoothly transition by usage of CSS features like `transition`, `animation`.
 
 ### If you have Node.js installed on your computer, or foresee no problem getting it installed, follow these directions (otherwise scroll down):
 0. install Node.js https://nodejs.org/en/download/
