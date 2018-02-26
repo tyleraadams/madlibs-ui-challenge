@@ -1,4 +1,4 @@
-## Thank you for accepting Flocabulary's UI/UX/CSS challenge!
+## Thank you for accepting Flocabulary's Front End Engineer challenge!
 
 At Flocabulary, we strive to provide rich educational materials that are also elegant, intuitive
 web interfaces. In this challenge you'll help create a hypothetical
