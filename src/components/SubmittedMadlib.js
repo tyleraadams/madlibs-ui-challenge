@@ -1,9 +1,9 @@
-var React = require('react');
+const React = require('react');
 
-var SubmittedMadlib = React.createClass({
+const SubmittedMadlib = React.createClass({
 
   render: function() {
-    var filledInMadlib = this.getFilledInMadlib();
+    const filledInMadlib = this.getFilledInMadlib();
 
     return (
       // this is what creates the displayed finished
@@ -25,7 +25,7 @@ var SubmittedMadlib = React.createClass({
 
   getFilledInMadlib: function() {
 
-    var blankRegexp = /%&(.*?)&%/gi;
+    const blankRegexp = /%&(.*?)&%/gi;
     return this.props.text.split('\n').map(
       (line, i) => (
         <span

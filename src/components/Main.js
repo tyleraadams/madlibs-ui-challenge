@@ -8,19 +8,19 @@ require('styles/App.scss');
 // but it is not required knowledge. Ideally, you will not have to
 // alter any javascript. React comes with an HTML-like syntax
 // called jsx, which you can alter much like HTML.
-var React = require('react');
+const React = require('react');
 
-var MadlibForm = require('./MadlibForm');
-var SubmittedMadlib = require('./SubmittedMadlib');
+const MadlibForm = require('./MadlibForm');
+const SubmittedMadlib = require('./SubmittedMadlib');
 
 // These are lyrics to a Flocabulary song that has had some
 // terms replaced for the purposes of the madlib.
-var MADLIB_TEXT = require('../madlibs/bill-of-rights');
+const MADLIB_TEXT = require('../madlibs/bill-of-rights');
 
 // This is the main component of the interface
-var AppComponent = React.createClass({
+const AppComponent = React.createClass({
   render: function() {
-    var content = (
+    const content = (
       this.state.submittedValue
       ? (
           // check out SubmittedMadlib.js to see the markup for this element
@@ -61,7 +61,7 @@ var AppComponent = React.createClass({
       //   </div>
       // )
       <div className="main">
-        <h1>FLOCABULARY MADLIB</h1>
+        <h1>Flocabulary Madlib</h1>
         {content}
       </div>
     );
