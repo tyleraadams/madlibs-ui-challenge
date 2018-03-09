@@ -1,0 +1,98 @@
+/* MAIN STYLES -- TO BE MOVED TO OWN FILE  */
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $primary;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: $type-primary;
+  grid-template-rows: repeat(12, 1fr);
+  font-family: $font;
+
+  &__title {
+    margin: 0;
+    grid-row: 6 / 7;
+    animation: 1s fadeColor;
+    animation-fill-mode: forwards;
+  }
+}
+
+.madlib-form {
+  grid-row: 7;
+  text-align: center;
+  justify-content: center;
+
+  form {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 18px;
+    animation-delay: 1s;
+    animation: 1s fadeOut;
+    animation-fill-mode: forwards;
+  }
+
+  &__form {
+    animation: 1s fadeIn;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+  }
+}
+
+.control-label {
+
+  &:after {
+    content: ":";
+    display: inline-block;
+  }
+}
+
+.form-control {
+  max-width: 200px;
+  margin-left: 10px;
+
+  &:focus {
+    border-bottom: 3px solid $type-primary;
+  }
+}
+
+.form-group {
+  color: $type-secondary;
+  position: relative;
+  left: 50px;
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  transition: font-size 200ms ease-in-out, color 200ms;
+  margin-top: 10px;
+
+  &-number {
+
+    .form-control {
+      max-width: 100px;
+    }
+  }
+
+  &.has-focus {
+    color: $type-primary;
+    font-size: 32px;
+    position: static;
+    margin-top: 12px;
+  }
+}
+
+.submit-button {
+  backgruond: white;
+  border: 0;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 40px;
+}

@@ -1,33 +1,30 @@
 /* Base Application Styles */
 
-/* COLORS -- TO BE MOVED TO OWN FILE  */
-$primary: #23AA5D;
-$type-primary: #FFFFFF;
-$type-secondary: #73BE88;
+@import 'vars';
+@import 'animations';
+@import 'form';
+@import 'submitted';
 
-.madlib-line {
-  display: block;
-  height: 20px;
+// === resets ===
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
-.madlib-line.last-of-chunk + .madlib-line {
-  display: inline-block;
+input {
+  background: none;
+  border: 0;
+  outline: none;
+  color: inherit;
 }
 
-.user-submitted-value {
-  text-decoration: underline;
+button {
+  cursor: pointer;
 }
 
-/* MAIN STYLES -- TO BE MOVED TO OWN FILE  */
-.main {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: $primary;
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  color: $type-primary;
+h1,
+h2 {
+  margin: 0;
 }
+// === end resets ===

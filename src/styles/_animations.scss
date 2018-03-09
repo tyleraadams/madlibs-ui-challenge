@@ -1,0 +1,39 @@
+@keyframes fadeIn {
+
+  0% {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+  }
+}
+
+@keyframes fadeColor {
+
+  0% {
+    color: $type-primary;
+    font-size: 36px;
+  }
+
+  100% {
+    color: $type-secondary;
+    font-size: 28px;
+  }
+}

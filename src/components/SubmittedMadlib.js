@@ -1,23 +1,25 @@
-const React = require('react');
+var React = require('react');
 
-const SubmittedMadlib = React.createClass({
+var SubmittedMadlib = React.createClass({
 
   render: function() {
-    const filledInMadlib = this.getFilledInMadlib();
+    var filledInMadlib = this.getFilledInMadlib();
 
     return (
       // this is what creates the displayed finished
       // madlib
       <div className='submitted-madlib-container'>
-        <h2>Your madlib:</h2>
+        <h1 className="submitted-title">Flocabulary Madlib</h1>
         <button
         	className='back-button'
           onClick={this.props.reset}
         >
           Go back
         </button>
+        <div className='submitted-madlib-grid'>
         <div className='submitted-madlib'>
           {filledInMadlib}
+        </div>
         </div>
       </div>
     );
@@ -25,7 +27,7 @@ const SubmittedMadlib = React.createClass({
 
   getFilledInMadlib: function() {
 
-    const blankRegexp = /%&(.*?)&%/gi;
+    var blankRegexp = /%&(.*?)&%/gi;
     return this.props.text.split('\n').map(
       (line, i) => (
         <span
